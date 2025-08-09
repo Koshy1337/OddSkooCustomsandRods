@@ -1,0 +1,393 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: black;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-image: url("https://media1.tenor.com/m/5mojGPZXVQUAAAAC/bonfire-fire.gif");
+}
+.image {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px 1px rgb(0, 0, 0);
+}
+header h1, .neon-text {
+  position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1px;
+  padding-top: 0px;
+  /* Size & position like your Times New Roman text */
+  margin: 0px auto ;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  color: rgb(255, 2, 2);
+/*  text-shadow: 2px 2px black;*/
+/*  box-shadow: 2px 2px 2px 2px black;*/
+
+  /* Glow colors (green/orange instead of pink) */
+  text-shadow: 0 0 0.6rem #ff0101, 0 0 1.5rem #00ff7f,
+    -0.2rem 0.1rem 1rem #00ff7f, 0.2rem 0.1rem 1rem #00ff7f,
+    0 -0.5rem 2rem #ffa500, 0 0.5rem 3rem #ffa500;
+
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+/* Blink colors */
+@keyframes blink {
+  0%, 22%, 36%, 75% {
+    color: #ff0000;
+    text-shadow: 0 0 0.6rem #fffbe6, 0 0 1.5rem #00ff7f,
+      -0.2rem 0.1rem 1rem #00ff7f, 0.2rem 0.1rem 1rem #00ff7f,
+      0 -0.5rem 2rem #ffa500, 0 0.5rem 3rem #ffa500;
+  }
+  28%, 33% {
+    color: #00ff7f;
+    text-shadow: none;
+  }
+  82%, 97% {
+    color: #ffa500;
+    text-shadow: none;
+  }
+}
+
+/* Shine effect */
+@keyframes shine {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 0.6rem #fffbe6, 0 0 1.5rem #00ff7f,
+      -0.2rem 0.1rem 1rem #00ff7f, 0.2rem 0.1rem 1rem #00ff7f,
+      0 -0.5rem 2rem #ffa500, 0 0.5rem 3rem #ffa500;
+  }
+}
+
+/* Flicker effect */
+@keyframes flicker {
+  from { opacity: 1; }
+  4% { opacity: 0.9; }
+  6% { opacity: 0.85; }
+  8% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  12% { opacity: 0.9; }
+  14% { opacity: 0.95; }
+  16% { opacity: 0.98; }
+  17% { opacity: 0.9; }
+  19% { opacity: 0.93; }
+  20% { opacity: 0.99; }
+  24% { opacity: 1; }
+  26% { opacity: 0.94; }
+  28% { opacity: 0.98; }
+  37% { opacity: 0.93; }
+  38% { opacity: 0.5; }
+  39% { opacity: 0.96; }
+  42% { opacity: 1; }
+  44% { opacity: 0.97; }
+  46% { opacity: 0.94; }
+  56% { opacity: 0.9; }
+  60% { opacity: 0.99; }
+  68% { opacity: 1; }
+  70% { opacity: 0.9; }
+  72% { opacity: 0.95; }
+  93% { opacity: 0.93; }
+  95% { opacity: 0.95; }
+  97% { opacity: 0.93; }
+  to { opacity: 1; }
+}
+header p {
+    margin: 1px 0;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px  black;
+    border: 0px solid rgb(0, 0, 0);
+    padding-top: 5px;
+}
+.address {
+  /* Keep original positioning & layout */
+  color: #ffffffd7;
+  -webkit-text-stroke: 0.1px #000000d7;
+  text-align: center;
+  position: relative; /* keep relative for top offset */
+  top: 20px;           /* preserve vertical offset */
+  margin: 0px auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.9rem;
+  text-shadow: 2px 2px 2px #00ff7f;
+  display: inline-block;
+  padding-bottom: 1px;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+  /* add flex display to match original if needed */
+  display: flex;
+
+  /* Now add the glow animation styles from header h1, .neon-text */
+  animation: shine 2s forwards, flicker 3s infinite;
+  /* Glow colors */
+  text-shadow: 0 0 0.6rem #ff0101, 0 0 1.5rem #00ff7f,
+               -0.2rem 0.1rem 1rem #00ff7f, 0.2rem 0.1rem 1rem #00ff7f,
+               0 -0.5rem 2rem #ffa500, 0 0.5rem 3rem #ffa500;
+  color: rgb(255, 2, 2); /* base color for animation */
+}
+
+/* Also make sure the keyframes from your original code exist */
+@keyframes blink {
+  0%, 22%, 36%, 75% {
+    color: #ff0000;
+    text-shadow: 0 0 0.6rem #fffbe6, 0 0 1.5rem #00ff7f,
+      -0.2rem 0.1rem 1rem #00ff7f, 0.2rem 0.1rem 1rem #00ff7f,
+      0 -0.5rem 2rem #ffa500, 0 0.5rem 3rem #ffa500;
+  }
+  28%, 33% {
+    color: #00ff7f;
+    text-shadow: none;
+  }
+  82%, 97% {
+    color: #ffa500;
+    text-shadow: none;
+  }
+}
+
+@keyframes shine {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 0.6rem #fffbe6, 0 0 1.5rem #00ff7f,
+      -0.2rem 0.1rem 1rem #00ff7f, 0.2rem 0.1rem 1rem #00ff7f,
+      0 -0.5rem 2rem #ffa500, 0 0.5rem 3rem #ffa500;
+  }
+}
+
+@keyframes flicker {
+  from { opacity: 1; }
+  4% { opacity: 0.9; }
+  6% { opacity: 0.85; }
+  8% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  12% { opacity: 0.9; }
+  14% { opacity: 0.95; }
+  16% { opacity: 0.98; }
+  17% { opacity: 0.9; }
+  19% { opacity: 0.93; }
+  20% { opacity: 0.99; }
+  24% { opacity: 1; }
+  26% { opacity: 0.94; }
+  28% { opacity: 0.98; }
+  37% { opacity: 0.93; }
+  38% { opacity: 0.5; }
+  39% { opacity: 0.96; }
+  42% { opacity: 1; }
+  44% { opacity: 0.97; }
+  46% { opacity: 0.94; }
+  56% { opacity: 0.9; }
+  60% { opacity: 0.99; }
+  68% { opacity: 1; }
+  70% { opacity: 0.9; }
+  72% { opacity: 0.95; }
+  93% { opacity: 0.93; }
+  95% { opacity: 0.95; }
+  97% { opacity: 0.93; }
+  to { opacity: 1; }
+}
+
+/* videos text */
+.videos-header {
+  color: rgb(255, 255, 255); /* fallback */
+  margin-bottom: 55px;
+  letter-spacing: 5px;
+  font-size: 1.9rem;
+
+  /* Animated gradient text */
+  background: linear-gradient(90deg, #00ff7f, #ffa500, #00ff7f);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: racingColors 3s linear infinite;
+}
+
+/* Animation keyframes for moving gradient */
+@keyframes racingColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Gallery */
+#gallery {
+    padding: 30px 10px;
+    color: #00ff7f;
+    font-family: cursive;
+    font-size: 1.2rem;
+    
+}
+.worktext {
+  color: black; /* fallback */
+  display: inline-block;
+  margin-top: 0px;
+  padding: 10px 10px;
+  background-color: #00ff7f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.9rem;
+  margin-bottom: 22px;
+  letter-spacing: 5px;
+
+  /* New animated gradient text color */
+  background: linear-gradient(90deg, #00ff7f, #ffa500, #00ff7f);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: racingColors 3s linear infinite;
+}
+
+/* Animation keyframes for moving gradient */
+@keyframes racingColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.photo-grid {
+  column-count: 3; /* or auto-fit with media queries */
+  column-gap: 5px;
+  padding: 10px;
+}
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  break-inside: avoid;
+  margin-bottom: 0px;
+}
+
+
+/* Videos scroll container below photos with horizontal scroll */
+#videos-scroll {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.video-scroll-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.video-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.video-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.fb-video-container {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+/* Facebook Link */
+.fb-link {
+    display: inline-block;
+    margin-top: 1px;
+    padding: 10px 20px;
+    background-color: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    
+}
+.followus {
+     color: black; /* fallback */
+  display: inline-block;
+  margin-top: 1px;
+  padding: 10px 20px;
+  background-color: #00ff7f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+
+  /* New animated gradient text color */
+  background: linear-gradient(90deg, #00ff7f, #ffa500, #00ff7f);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: racingColors 3s linear infinite;
+}
+
+/* Animation keyframes for moving gradient */
+@keyframes racingColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.fb-link:hover {
+    background-color: #145db2;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #00ff7f;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+html, body {
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#videos-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+#videos-scroll > * {
+  flex: 0 0 auto;
+}
